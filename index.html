@@ -12,7 +12,7 @@
     <ul class="navigation-list">
       <li class="navigation-item">
         <a class="navigation-link" href="#">
-          <img src="./assets/logo.svg" alt="logo" class="src">
+          <img class="logo" src="./assets/logo.svg" alt="логотип Седона">
         </a>
         <a class="navigation-link" href="#">Главная</a>
         <a class="navigation-link" href="#">О&nbsp;Седоне</a>
@@ -37,7 +37,7 @@
   </nav>
 </header>
 <!-- Тело сайта -->
-<main>
+<main class="main-index">
   <section class="about">
     <h1 class="visually-hidden">Туристическая поездка в&nbsp;Седону</h1>
     <p>Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</p>
@@ -120,15 +120,26 @@
 </main>
 <!-- Футер сайта -->
 <footer class="main-footer">
-  <div>
-    <a href="#">VK</a>
-    <a href="#">Telegram</a>
-    <a href="#">YouTube</a>
-  </div>
-  <address>
+  <ul class="footer-social-list">
+    <li class="footer-social-item">
+    <a class="button" href="https://vk.com/htmlacademy"><span class="visually-hidden">VK</span>
+    </a>
+    </li>
+    <li class="footer-social-item">
+      <a class="button" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span>
+      </a>
+    </li>
+    <li class="footer-social-item">
+      <a class="button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span>
+      </a>
+    </li>
+  </ul>
+  <adress>
+  <a class="contacts-phone" href="tel:+7(812)8121212">
     +7 (812) 812-12-12
-  </address>
-  <a href="#">logo</a>
+  </a>
+  </adress>
+  <a href="https://htmlacademy.ru/">logo</a>
 </footer>
 </body>
 </html>
