@@ -11,8 +11,8 @@
   <nav class="navigation">
     <ul class="navigation-list">
       <li class="navigation-item">
-        <a class="navigation-logo" href="#">
-          <img src="./assets/logo.svg" alt="logo" class="src">
+        <a class="navigation-link" href="#">
+          <img class="logo" src="./assets/logo.svg" width="139" height="70" alt="логотип Седона">
         </a>
         <a class="navigation-link" href="#">Главная</a>
         <a class="navigation-link" href="#">О&nbsp;Седоне</a>
@@ -22,11 +22,13 @@
     <ul class="navigation-user">
       <li class="navigation-link">
         <a class="navigation-link" href="#">
+          <img src="./assets/search.svg" alt="Поиск" height="19" width="19">
           <span class="visually-hidden">search</span>
         </a>
       </li>
       <li class="navigation-link">
         <a class="navigation-link" href="#">
+          <img src="./assets/favorite.svg" alt="Избранное" height="17" width="19">
           <span class="visually-hidden">favorite</span>
         </a>
       </li>
@@ -38,15 +40,19 @@
 </header>
 <!-- Тело сайта -->
 <main class="main-index">
-    <h1>Гостиницы Седоны</h1>
-    <ol class="breadcrumbs">
-      <li class="breadcrumbs-item"><a class="breadcrumbs-item" href="#"><img src="#" alt="home" class="src"></a>
-      </li>
-      <li class="breadcrumbs-item"><a>Гостиницы</a>
-      </li>
-    </ol>
+  <h1>Гостиницы Седоны</h1>
+  <ol class="breadcrumbs">
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-item" href="#">
+        <img src="./assets/breadcrumbs-home.svg" alt="home" width="13" height="13">
+        <img src="./assets/Catalog/arrow.svg" alt="Стрелка" height="9" width="6">
+      </a>
+    </li>
+    <li class="breadcrumbs-item"><a>Гостиницы</a>
+    </li>
+  </ol>
   <section class="catalog-projects">
-           <h2 class="vizually-hidden">Список товаров с фильтрами</h2>
+    <h2 class="vizually-hidden">Список товаров с фильтрами</h2>
   </section>
   <p>Инфраструктура:</p>
   <form>
@@ -120,7 +126,7 @@
           <table id="card-1">
             <tr>
               <td rowspan="2">
-                <img src="#" alt="photo" class="src">
+                <img src="./assets/Catalog/amara-resort-spa.jpg" alt="Amara Resort Spa" width="300" height="211">
               </td>
             </tr>
             <tr>
@@ -152,7 +158,7 @@
           <table id="card-2">
             <tr>
               <td rowspan="2">
-                <img src="#" alt="photo" class="src">
+                <img src="./assets/Catalog/villas-at-poco-diablo.jpg" alt="Villias at poco Diablo" height="211" width="300">
               </td>
             </tr>
             <tr>
@@ -184,7 +190,7 @@
           <table id="card-3">
             <tr>
               <td rowspan="2">
-                <img src="#" alt="photo" class="src">
+                <img src="./assets/Catalog/desert-quail-inn.jpg" alt="Desert Quail Inn" height="211" width="300">
               </td>
             </tr>
             <tr>
@@ -218,7 +224,7 @@
           <table id="card-4">
             <tr>
               <td rowspan="2">
-                <img src="#" alt="photo" class="src">
+                <img src="./assets/Catalog/green-tree-inn.jpg" alt="GreenTree Inn" height="211" width="300">
               </td>
             </tr>
             <tr>
@@ -291,15 +297,21 @@
 <footer class="main-footer">
   <ul class="footer-social-list">
     <li class="footer-social-item">
-      <a class="button" href="https://vk.com/htmlacademy"><span class="visually-hidden">VK</span>
+      <a class="button" href="https://vk.com/htmlacademy">
+        <img src="./assets/vk.svg" alt="ВКонтакте">
+        <span class="visually-hidden">VK</span>
       </a>
     </li>
     <li class="footer-social-item">
-      <a class="button" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span>
+      <a class="button" href="https://t.me/htmlacademy">
+        <img src="./assets/telegram.svg" alt="Telegram">
+        <span class="visually-hidden">Telegram</span>
       </a>
     </li>
     <li class="footer-social-item">
-      <a class="button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span>
+      <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+        <img src="./assets/youtube.svg" alt="YouTube">
+        <span class="visually-hidden">YouTube</span>
       </a>
     </li>
   </ul>
@@ -308,7 +320,9 @@
       +7 (812) 812-12-12
     </a>
   </adress>
-  <a href="https://htmlacademy.ru/">logo</a>
+  <a href="https://htmlacademy.ru/">
+    <img class="footer-logo" src="./assets/logo_htmlacademy.svg" alt="logo htmlacademy" width="115" height="34">
+  </a>
 </footer>
 </body>
 </html>
