@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -14,9 +15,15 @@
         <a class="navigation-link" href="#">
           <img class="logo" src="./assets/logo.svg" width="139" height="70" alt="логотип Седона">
         </a>
-        <a class="navigation-link" href="#">Главная</a>
-        <a class="navigation-link" href="#">О&nbsp;Седоне</a>
-        <a class="navigation-link" href="#">Гостиницы</a>
+        <a class="navigation-link" href="#">
+          Главная
+        </a>
+        <a class="navigation-link" href="#">
+          О&nbsp;Седоне
+        </a>
+        <a class="navigation-link" href="#">
+          Гостиницы
+        </a>
       </li>
     </ul>
     <ul class="navigation-user">
@@ -33,7 +40,9 @@
         </a>
       </li>
       <li class="navigation-link">
-        <a class="navigation-link" href="#">Хочу сюда!</a>
+        <a class="navigation-link" href="#">
+          Хочу сюда!
+        </a>
       </li>
     </ul>
   </nav>
@@ -44,6 +53,7 @@
   <ol class="breadcrumbs">
     <li class="breadcrumbs-item">
       <a class="breadcrumbs-item" href="#">
+        <span class="visually-hidden">home</span>
       </a>
     </li>
     <li class="breadcrumbs-item"><a>Гостиницы
@@ -51,69 +61,73 @@
     </li>
   </ol>
   <h2 class="vizually-hidden">Список товаров с&nbsp;фильтрами</h2>
-  <p>Инфраструктура:</p>
-  <form>
-    <label>
-      <input type="checkbox" name="Infrastructure" value="pool" checked>
-      Бассейн
-    </label>
+  <fieldset>
+    <legend>Инфраструктура:</legend>
+    <form>
+      <label>
+        <input type="checkbox" name="Infrastructure" value="pool" checked>
+        Бассейн
+      </label>
 
-    <label>
-      <input type="checkbox" name="Infrastructure" value="parking" checked>
-      Парковка
-    </label>
+      <label>
+        <input type="checkbox" name="Infrastructure" value="parking" checked>
+        Парковка
+      </label>
 
-    <label>
-      <input type="checkbox" name="Infrastructure" value="internet">
-      Wi-Fi
-    </label>
+      <label>
+        <input type="checkbox" name="Infrastructure" value="internet">
+        Wi-Fi
+      </label>
 
 
-    <p>Тип жилья:</p>
-    <div>
-      <input type="radio" id="place-1"
-             name="house" value="hotel" checked>
-      <label for="place-1">Гостиница</label>
-      <input type="radio" id="place-2"
-             name="house" value="motel">
-      <label for="place-2">Мотель</label>
-      <input type="radio" id="place-3"
-             name="house" value="apartment">
-      <label for="place-3">Апартаменты</label>
-    </div>
+      <p>Тип жилья:</p>
+      <div>
+        <input type="radio" id="place-1"
+               name="house" value="hotel" checked>
+        <label for="place-1">Гостиница</label>
+        <input type="radio" id="place-2"
+               name="house" value="motel">
+        <label for="place-2">Мотель</label>
+        <input type="radio" id="place-3"
+               name="house" value="apartment">
+        <label for="place-3">Апартаменты</label>
+      </div>
 
-    <p>Стоимость, ₽:</p>
-    <table>
-      <tr>
-        <td>0&nbsp;от</td>
-        <td>900 до</td>
-      </tr>
-    </table>
+      <p>Стоимость, ₽:</p>
+      <table>
+        <tr>
+          <td>0&nbsp;от</td>
+          <td>900 до</td>
+        </tr>
+      </table>
 
-    <input type="submit" min="0" max="900" step="1" value="Применить">
-    <input type="reset" min="0" max="900" step="1" value="Сбросить">
+      <input type="submit" value="Применить">
+      <input type="reset" value="Сбросить">
+    </form>
+  </fieldset>
+  <section>
+    <h2 class="visually hidden">Сортировка</h2>
+    <p>Найдено гостиниц: 38</p>
+    <select name="sorting">
+      <option value="cheap">Сначала дешевые</option>
+      <option value="expensive">Сначала дорогие</option>
+    </select>
+  </section>
 
-    <section>
-      <p>Найдено гостиниц: 38</p>
-      <select name="sorting">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-      </select>
-    </section>
-  </form>
   <div>
     <input type="radio" id="view-table"
-           name="type" value="view-table" checked>
+           name="house" value="view-table" checked>
     <label for="view-table">Таблица</label>
     <input type="radio" id="view-card"
-           name="type" value="view-card">
+           name="house" value="view-card">
     <label for="view-card">Карточка</label>
     <input type="radio" id="view-list"
-           name="type" value="view-list">
+           name="house" value="view-list">
     <label for="view-list">Список</label>
   </div>
   <section>
-    <li class="card-1">
+    <h2 class="visually hidden">Товарные карточки</h2>
+    <li class="card">
 
       <img src="./assets/Catalog/amara-resort-spa.jpg" alt="Amara Resort Spa" width="300" height="211">
 
@@ -122,9 +136,13 @@
       <p>Гостиница</p>
       <p>От&nbsp;4000&nbsp;₽</p>
 
-      <a href="#">подробнее</a>
+      <a href="#">
+        подробнее
+      </a>
 
-      <a href="#">в&nbsp;избранное</a>
+      <a href="#">
+        в&nbsp;избранное
+      </a>
 
       <div class="star star-repeat-4">
 
@@ -134,7 +152,7 @@
 
     </li>
 
-    <li class="card-2">
+    <li class="card">
 
       <img src="./assets/Catalog/villas-at-poco-diablo.jpg" alt="Villias at poco Diablo" height="211" width="300">
 
@@ -155,7 +173,7 @@
 
     </li>
 
-    <li class="card-3">
+    <li class="card">
 
       <img src="./assets/Catalog/desert-quail-inn.jpg" alt="Desert Quail Inn" height="211" width="300">
 
@@ -164,37 +182,33 @@
       <p>Гостиница</p>
       <p>От&nbsp;2500&nbsp;₽</p>
 
-      <a href="#">подробнее</a>
-
-      <a href="#">в&nbsp;избранное</a>
-
+      <a href="#">
+        подробнее
+      </a>
+      <a href="#">
+        в&nbsp;избранное
+      </a>
       <div class="repeat">
-
       </div>
-
       <p>Рейтинг: 6,9</p>
-
     </li>
 
-    <li class="card-4">
-
+    <li class="card">
       <img src="./assets/Catalog/green-tree-inn.jpg" alt="GreenTree Inn" height="211" width="300">
-
       <h3>GreenTree Inn</h3>
-
       <p>Гостиница</p>
       <p>От&nbsp;1500&nbsp;₽</p>
-
-      <a href="#">подробнее</a>
-
-      <a href="#">в&nbsp;избранное</a>
+      <a href="#">
+        подробнее
+      </a>
+      <a href="#">
+        в&nbsp;избранное
+      </a>
 
       <div class="repeat">
 
       </div>
-
       <p>Рейтинг: 5,0</p>
-
     </li>
     <div>
       <a href="#">1</a>
@@ -204,14 +218,14 @@
       <a href="#">...</a>
       <a href="#">10</a>
     </div>
-    <div><label for="per-page">Гостиниц на&nbsp;странице:</label></div>
+    <label for="per-page">Гостиниц на&nbsp;странице:</label>
     <select id="per-page" name="per-page">
       <option value="cheap">4</option>
       <option value="expensive">8</option>
     </select>
   </section>
   <section class="subscribe">
-    <h2>Подпишитесь на&nbsp;рассылку</h2>
+    <h3>Подпишитесь на&nbsp;рассылку</h3>
     <p>Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
     <form>
       <label for="email" class="visually-hidden">Ваш e-mail</label>
