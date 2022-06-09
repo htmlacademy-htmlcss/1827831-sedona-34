@@ -53,7 +53,7 @@
   <ol class="breadcrumbs">
     <li class="breadcrumbs-item">
       <a class="breadcrumbs-item" href="#">
-        <span class="visually-hidden">home</span>
+        <span class="visually-hidden">Домой</span>
       </a>
     </li>
     <li class="breadcrumbs-item"><a>Гостиницы
@@ -61,9 +61,10 @@
     </li>
   </ol>
   <h2 class="vizually-hidden">Список товаров с&nbsp;фильтрами</h2>
-  <fieldset>
-    <legend>Инфраструктура:</legend>
-    <form>
+  <form>
+    <fieldset>
+      <legend>Инфраструктура:</legend>
+
       <label>
         <input type="checkbox" name="Infrastructure" value="pool" checked>
         Бассейн
@@ -80,7 +81,7 @@
       </label>
 
 
-      <p>Тип жилья:</p>
+      <legend>Тип жилья:</legend>
       <div>
         <input type="radio" id="place-1"
                name="house" value="hotel" checked>
@@ -93,7 +94,7 @@
         <label for="place-3">Апартаменты</label>
       </div>
 
-      <p>Стоимость, ₽:</p>
+      <legend>Стоимость, ₽:</legend>
       <table>
         <tr>
           <td>0&nbsp;от</td>
@@ -103,30 +104,32 @@
 
       <input type="submit" value="Применить">
       <input type="reset" value="Сбросить">
-    </form>
-  </fieldset>
-  <section>
-    <h2 class="visually hidden">Сортировка</h2>
-    <p>Найдено гостиниц: 38</p>
-    <select name="sorting">
-      <option value="cheap">Сначала дешевые</option>
-      <option value="expensive">Сначала дорогие</option>
-    </select>
-  </section>
 
-  <div>
-    <input type="radio" id="view-table"
-           name="house" value="view-table" checked>
-    <label for="view-table">Таблица</label>
-    <input type="radio" id="view-card"
-           name="house" value="view-card">
-    <label for="view-card">Карточка</label>
-    <input type="radio" id="view-list"
-           name="house" value="view-list">
-    <label for="view-list">Список</label>
-  </div>
+    </fieldset>
+  </form>
   <section>
-    <h2 class="visually hidden">Товарные карточки</h2>
+    <div>
+      <h2 class="visually-hidden">Сортировка</h2>
+      <p>Найдено гостиниц: 38</p>
+      <select name="sorting">
+        <option value="cheap">Сначала дешевые</option>
+        <option value="expensive">Сначала дорогие</option>
+      </select>
+    </div>
+    <div>
+      <input type="radio" id="view-table"
+             name="house" value="view-table" checked>
+      <label for="view-table">Таблица</label>
+      <input type="radio" id="view-card"
+             name="house" value="view-card">
+      <label for="view-card">Карточка</label>
+      <input type="radio" id="view-list"
+             name="house" value="view-list">
+      <label for="view-list">Список</label>
+    </div>
+  </section>
+  <section>
+    <h2 class="visually-hidden">Товарные карточки</h2>
     <li class="card">
 
       <img src="./assets/Catalog/amara-resort-spa.jpg" alt="Amara Resort Spa" width="300" height="211">
