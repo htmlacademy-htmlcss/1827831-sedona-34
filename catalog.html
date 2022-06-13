@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Седона</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styleguide.css">
+  <link rel="stylesheet" href="styles/catalog.css">
 </head>
 
 <body>
@@ -79,31 +80,33 @@
         <input type="checkbox" name="Infrastructure" value="internet">
         Wi-Fi
       </label>
+    </fieldset>
 
-
+    <fieldset>
       <legend>Тип жилья:</legend>
-      <div>
-        <input type="radio" id="place-1"
-               name="house" value="hotel" checked>
-        <label for="place-1">Гостиница</label>
-        <input type="radio" id="place-2"
-               name="house" value="motel">
-        <label for="place-2">Мотель</label>
-        <input type="radio" id="place-3"
-               name="house" value="apartment">
-        <label for="place-3">Апартаменты</label>
-      </div>
 
+      <input type="radio" id="place-1"
+             name="house" value="hotel" checked>
+      <label for="place-1">Гостиница</label>
+      <input type="radio" id="place-2"
+             name="house" value="motel">
+      <label for="place-2">Мотель</label>
+      <input type="radio" id="place-3"
+             name="house" value="apartment">
+      <label for="place-3">Апартаменты</label>
+
+    </fieldset>
+    <fieldset>
       <legend>Стоимость, ₽:</legend>
-      <table>
-        <tr>
-          <td>0&nbsp;от</td>
-          <td>900 до</td>
-        </tr>
-      </table>
 
-      <input type="submit" value="Применить">
-      <input type="reset" value="Сбросить">
+      <input>0&nbsp;от</input>
+      <input>900 до</input>
+
+    </fieldset>
+
+
+    <input type="submit" value="Применить">
+    <input type="reset" value="Сбросить">
 
     </fieldset>
   </form>
