@@ -1,0 +1,94 @@
+
+
+/* Pages */
+
+.page-header {
+  color: #FFFFFF;
+  background: black;
+}
+
+.navigation-link {
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main-index {
+  background-color: #FFFFFF;
+  color: black;
+  background-image: url("./../assets/background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+}
+.about {
+  text-align: center;
+}
+.about__title {
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__paragraph {
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  Font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages {
+
+}
+
+.advantages-row {
+  text-align: center;
+
+}
+
+.advantages-card-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-card-subtitle {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.background-blue {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.background-grey {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.background-grey-blue {
+  background-color: rgba(131, 179, 211, 0.2)
+}
+
+.background-white {
+  background-color: #FFFFFF;
+}
+
+.main-footer {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+ }
+
+.contacts-phone {
+  text-align: center;
+  color: #000000;
+}
+
