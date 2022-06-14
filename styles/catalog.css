@@ -139,33 +139,26 @@ h3 {
 }
 
 .pagination {
-  background-color: #82B3D3;
-}
-
-.pagination-link {
-  color: #FFFFFF;
-
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.pagination-current {
-  color: #000000;
-  background-color: #F2F2F2;
-  width: 55px;
-  height: 55px;
-}
-
-.pagination-disabled {
-  background-color: #595959;
-}
-
 .pagination-item {
+  display: inline-block;
   width: 55px;
   height: 55px;
   vertical-align: middle;
   background-color: #82B3D3;
+  color: #000000;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+}
+
+.pagination-disabled {
+  background-color: #595959;
 }
 
 .per-page {

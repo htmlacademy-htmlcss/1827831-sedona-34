@@ -57,34 +57,30 @@
         <span class="visually-hidden">Домой</span>
       </a>
     </li>
-    <li class="breadcrumbs-item"><a>Гостиницы
-    </a>
+    <li class="breadcrumbs-item">
+      <a>Гостиницы</a>
     </li>
   </ol>
+
   <h2 class="vizually-hidden">Список товаров с&nbsp;фильтрами</h2>
   <form>
     <fieldset>
       <legend class="catalog-filter-title">Инфраструктура:</legend>
-
       <label class="checkbox">
         <input type="checkbox" name="Infrastructure" value="pool" checked>
         Бассейн
       </label>
-
       <label class="checkbox">
         <input type="checkbox" name="Infrastructure" value="parking" checked>
         Парковка
       </label>
-
       <label class="checkbox">
         <input type="checkbox" name="Infrastructure" value="internet">
         Wi-Fi
       </label>
     </fieldset>
-
     <fieldset>
       <legend class="catalog-filter-title">Тип жилья:</legend>
-
       <input type="radio" id="place-1"
              name="house" value="hotel" checked>
       <label for="place-1" class="checkbox">Гостиница</label>
@@ -94,27 +90,24 @@
       <input type="radio" id="place-3"
              name="house" value="apartment">
       <label for="place-3" class="checkbox">Апартаменты</label>
-
     </fieldset>
     <fieldset>
       <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
-      <input>0&nbsp;от</input>
-      <input>900 до</input>
-
+      <label for="cost-from" class="">от</label>
+      <input type="number" id="cost-from" placeholder="0" min="0">
+      <label for="cost-to" class="">до</label>
+      <input type="number" id="cost-to" placeholder="900" max="900">
     </fieldset>
-
-
     <input class="button-light" type="submit" value="Применить">
     <input class="button-reset" type="reset" value="Сбросить">
-
-    </fieldset>
   </form>
+
   <section>
     <div>
       <h2 class="visually-hidden">Сортировка</h2>
       <p class="sorting">Найдено гостиниц: 38</p>
-      <select name="sorting">
+      <label for="sorting" class="visually-hidden">Сортировка</label>
+      <select id="sorting" name="sorting">
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
@@ -131,110 +124,70 @@
       <label for="view-list">Список</label>
     </div>
   </section>
+
   <section>
     <h2 class="visually-hidden">Товарные карточки</h2>
-    <li class="card">
-
-      <img src="./assets/Catalog/amara-resort-spa.jpg" alt="Amara Resort Spa" width="300" height="211">
-
-      <h3>Amara Resort &amp;&nbsp;Spa</h3>
-
-      <p class="card-description">Гостиница</p>
-      <p class="card-description">От&nbsp;4000&nbsp;₽</p>
-
-      <a class="card-button" href="#">
-        подробнее
-      </a>
-
-      <a class="card-button-favorite" href="#">
-        в&nbsp;избранное
-      </a>
-
-      <div class="star star-repeat-4">
-
-      </div>
-
-      <p class="rating">Рейтинг: 8,5</p>
-
-    </li>
-
-    <li class="card">
-
-      <img src="./assets/Catalog/villas-at-poco-diablo.jpg" alt="Villias at poco Diablo" height="211" width="300">
-
-      <h3>Villas at&nbsp;Poco Diablo</h3>
-
-      <p class="card-description">Гостиница</p>
-      <p class="card-description">От&nbsp;5000&nbsp;₽</p>
-
-      <a class="card-button">подробнее</a>
-
-      <a class="card-button-in-favorite">в&nbsp;избранном</a>
-
-      <div class="star star-repeat-4">
-
-      </div>
-
-      <p class="rating">Рейтинг: 9,2</p>
-
-    </li>
-
-    <li class="card">
-
-      <img src="./assets/Catalog/desert-quail-inn.jpg" alt="Desert Quail Inn" height="211" width="300">
-
-      <h3>Desert Quail Inn</h3>
-
-      <p class="card-description">Гостиница</p>
-      <p class="card-description">От&nbsp;2500&nbsp;₽</p>
-
-      <a class="card-button" href="#">
-        подробнее
-      </a>
-      <a class="card-button-favorite" href="#">
-        в&nbsp;избранное
-      </a>
-      <div class="star star-repeat-3">
-      </div>
-      <p class="rating">Рейтинг: 6,9</p>
-    </li>
-
-    <li class="card">
-      <img src="./assets/Catalog/green-tree-inn.jpg" alt="GreenTree Inn" height="211" width="300">
-      <h3>GreenTree Inn</h3>
-      <p class="card-description">Гостиница</p>
-      <p class="card-description">От&nbsp;1500&nbsp;₽</p>
-      <a class="card-button" href="#">
-        подробнее
-      </a>
-      <a class="card-button-favorite" href="#">
-        в&nbsp;избранное
-      </a>
-
-      <div class="star star-repeat-2">
-
-      </div>
-      <p class="rating">Рейтинг: 5,0</p>
-    </li>
-    <div class="pagination-link">
-      <div class="pagination-current">
-      <a href="#">1</a>
-      </div>
-      <div class="pagination-item">
-      <a href="#">2</a>
-      </div>
-      <div class="pagination-item">
-      <a href="#">3</a>
-      </div>
-      <div class="pagination-item">
-      <a href="#">4</a>
-      </div>
-      <div class="pagination-item">
-      <a href="#">...</a>
-      </div>
-      <div class="pagination-item">
-      <a href="#">10</a>
-      </div>
+    <ul>
+      <li class="card">
+        <img src="./assets/catalog/amara-resort-spa.jpg" alt="Amara Resort Spa" width="300" height="211">
+        <h3>Amara Resort &amp;&nbsp;Spa</h3>
+        <p class="card-description">Гостиница</p>
+        <p class="card-description">От&nbsp;4000&nbsp;₽</p>
+        <a class="card-button" href="#">
+          подробнее
+        </a>
+        <a class="card-button-favorite" href="#">
+          в&nbsp;избранное
+        </a>
+        <div class="star star-repeat-4"></div>
+        <p class="rating">Рейтинг: 8,5</p>
+      </li>
+      <li class="card">
+        <img src="./assets/catalog/villas-at-poco-diablo.jpg" alt="Villias at poco Diablo" height="211" width="300">
+        <h3>Villas at&nbsp;Poco Diablo</h3>
+        <p class="card-description">Гостиница</p>
+        <p class="card-description">От&nbsp;5000&nbsp;₽</p>
+        <a class="card-button">подробнее</a>
+        <a class="card-button-in-favorite">в&nbsp;избранном</a>
+        <div class="star star-repeat-4"></div>
+        <p class="rating">Рейтинг: 9,2</p>
+      </li>
+      <li class="card">
+        <img src="./assets/catalog/desert-quail-inn.jpg" alt="Desert Quail Inn" height="211" width="300">
+        <h3>Desert Quail Inn</h3>
+        <p class="card-description">Гостиница</p>
+        <p class="card-description">От&nbsp;2500&nbsp;₽</p>
+        <a class="card-button" href="#">
+          подробнее
+        </a>
+        <a class="card-button-favorite" href="#">
+          в&nbsp;избранное
+        </a>
+        <div class="star star-repeat-3"></div>
+        <p class="rating">Рейтинг: 6,9</p>
+      </li>
+      <li class="card">
+        <img src="./assets/catalog/green-tree-inn.jpg" alt="GreenTree Inn" height="211" width="300">
+        <h3>GreenTree Inn</h3>
+        <p class="card-description">Гостиница</p>
+        <p class="card-description">От&nbsp;1500&nbsp;₽</p>
+        <a class="card-button" href="#">
+          подробнее
+        </a>
+        <a class="card-button-favorite" href="#">
+          в&nbsp;избранное
+        </a>
+        <div class="star star-repeat-2"></div>
+        <p class="rating">Рейтинг: 5,0</p>
+      </li>
+    </ul>
+    <div class="pagination">
+      <a class="pagination-item pagination-current" href="#">1</a>
+      <a class="pagination-item" href="#">2</a>
+      <a class="pagination-item" href="#">3</a>
+      <a class="pagination-item" href="#">4</a>
+      <a class="pagination-item" href="#">...</a>
+      <a class="pagination-item" href="#">10</a>
     </div>
     <label class="per-page" for="per-page">Гостиниц на&nbsp;странице:</label>
     <select id="per-page" name="per-page">
@@ -242,16 +195,18 @@
       <option value="expensive">8</option>
     </select>
   </section>
+
   <section class="subscribe">
     <h3>Подпишитесь на&nbsp;рассылку</h3>
     <p class="subscribe-text">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
     <form>
       <label for="email" class="visually-hidden">Ваш e-mail</label>
-      <input class="email-input" id="email" type="text">
+      <input class="email-input" id="email" type="text" placeholder="Ваш e-mail">
       <button class="submit" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
+
 <!-- Футер сайта -->
 <footer class="main-footer">
   <ul class="footer-social-list">
