@@ -1,6 +1,74 @@
 
+body {
+  background-color: white;
 
-/* Pages */
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./../fonts/PTSans-Italic.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./../fonts/PTSans-BoldItalic.ttf") format("ttf");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", Arial;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Page 1 */
 
 .page-header {
   color: #FFFFFF;
@@ -63,6 +131,24 @@
   line-height: 21px;
 }
 
+.advantages-icon-food {
+  background-image: url("./../assets/food.svg");
+  width: 75px;
+  height: 71px;
+}
+
+.advantages-icon-home {
+  background-image: url("./../assets/home.svg");
+  width: 75px;
+  height: 71px;
+}
+
+.advantages-icon-souvenirs {
+  background-image: url("./../assets/souvenirs.svg");
+  width: 65px;
+  height: 77px;
+}
+
 .background-blue {
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -78,6 +164,210 @@
 
 .background-white {
   background-color: #FFFFFF;
+}
+
+/* Page 2 */
+
+.page-header {
+  color: #FFFFFF;
+  background: black;
+}
+
+.navigation-link {
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main-index {
+  background-color: #FFFFFF;
+  color: black;
+  background-image: url("./../assets/catalog/background-catalog.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.color-white {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-item {
+  color: #242424;
+  text-align: left;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+}
+
+.checkbox {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+}
+
+.button-light {
+  color: white;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+}
+
+.button-reset {
+  color: white;
+}
+
+.sorting {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: black;
+}
+
+.card-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: black;
+}
+
+.card-button {
+  color: white;
+  background-color: #756157;
+  text-transform: uppercase;
+}
+
+.card-button-favorite {
+  color: white;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+}
+
+.card-button-in-favorite {
+  color: white;
+  background-color: #7DB54F;
+  text-transform: uppercase;
+}
+
+.star {
+  background-image: url("./../assets/catalog/star.svg");
+  background-repeat: repeat-x;
+  height: 17px;
+}
+
+.star-repeat-1 {
+  width: calc(18px*1);
+}
+
+.star-repeat-2 {
+  width: calc(18px*2);
+}
+
+.star-repeat-3 {
+  width: calc(18px*3);
+}
+
+.star-repeat-4 {
+  width: calc(18px*4);
+}
+
+.rating {
+  color: black;
+  background-color: #F2F2F2;
+  width: 160px;
+  height: 37px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.pagination {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.pagination-item {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  vertical-align: middle;
+  background-color: #82B3D3;
+  color: #000000;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+}
+
+.pagination-disabled {
+  background-color: #595959;
+}
+
+.per-page {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe-text {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.submit {
+  color: white;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.email-input {
+  color: black;
+  background-color: #F2F2F2;
+  width: 600px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
 }
 
 .main-footer {
