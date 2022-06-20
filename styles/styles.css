@@ -144,22 +144,31 @@ body {
   line-height: 21px;
 }
 
-.advantages-icon-food {
-  background-image: url("./../assets/food.svg");
+.advantages-icon-home h3::before {
+  display: block;
   width: 75px;
   height: 71px;
+  content: "";
+  background: url("./../assets/home.svg") no-repeat center;
+  margin: 0 auto;
 }
 
-.advantages-icon-home {
-  background-image: url("./../assets/home.svg");
+.advantages-icon-food h3::before {
+  display: block;
   width: 75px;
   height: 71px;
+  content: "";
+  background: url("./../assets/food.svg") no-repeat center center;
+  margin: 0 auto;
 }
 
-.advantages-icon-souvenirs {
+.advantages-icon-souvenirs h3::before {
+  display: block;
   background-image: url("./../assets/souvenirs.svg");
   width: 65px;
   height: 77px;
+  content: "";
+  margin: 0 auto;
 }
 
 .background-blue {
