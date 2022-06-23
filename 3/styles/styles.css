@@ -11,6 +11,11 @@ body {
   color: black;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .page-container {
   margin: 0 auto;
   width: 960px;
@@ -115,8 +120,15 @@ body {
   line-height: 26px;
 }
 
-.advantages {
+.advantages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.advantages-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages-row {
@@ -125,12 +137,16 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  height: 384px;
+  min-height: 384px;
 }
 
 .advantages-card {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 400px;
+
 }
 
 .advantages-card-title {
@@ -144,31 +160,24 @@ body {
   line-height: 21px;
 }
 
-.advantages-icon-home h3::before {
-  display: block;
-  width: 75px;
-  height: 71px;
+.advantages-card h3::before {
   content: "";
-  background: url("./../assets/home.svg") no-repeat center;
+  display: block;
   margin: 0 auto;
+  width: 75px;
+  height: 76px;
+}
+
+.advantages-icon-home h3::before {
+  background: url("./../assets/home.svg") no-repeat center center;
 }
 
 .advantages-icon-food h3::before {
-  display: block;
-  width: 75px;
-  height: 71px;
-  content: "";
   background: url("./../assets/food.svg") no-repeat center center;
-  margin: 0 auto;
 }
 
 .advantages-icon-souvenirs h3::before {
-  display: block;
-  background-image: url("./../assets/souvenirs.svg");
-  width: 65px;
-  height: 77px;
-  content: "";
-  margin: 0 auto;
+  background: url("./../assets/souvenirs.svg") no-repeat center center;
 }
 
 .background-blue {
@@ -177,7 +186,7 @@ body {
 }
 
 .background-grey {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #f0f6fa;
 }
 
 .background-grey-blue {
@@ -424,7 +433,7 @@ html {
 
 .navigation {
   display: flex;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -490,32 +499,42 @@ html {
 }
 
 .action {
-  width: 1200px;
+  width: 100%;
   height: 417px;
 }
 
 .subscribe {
-  width: 1200px;
+  width: 100%;
   height: 411px;
 }
 
 .page-footer-container {
   display: flex;
-  width: 1200px;
+  justify-content: space-evenly;
+  width: 100%;
   margin: 0 auto;
+  align-items: center;
 }
 
 .footer-social-list {
   width: 116px;
-  margin-right: 247px;
+
 }
 
 .contacts-phone {
-  width: 331px;
-  margin-right: 247px;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .footer-logo {
   width: 115px;
   margin-left: auto;
 }
+
+.advantages-card-img {
+  position: relative;
+  flex-grow: 2;
+}
+
+
+
