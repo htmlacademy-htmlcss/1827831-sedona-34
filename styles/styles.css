@@ -21,6 +21,7 @@ body {
 
 .catalog-first-screen {
   background-image: url("./../assets/catalog/background-catalog.svg");
+  min-height: 394px;
 }
 
 @font-face {
@@ -361,6 +362,17 @@ body {
   text-transform: uppercase;
   padding-bottom: 29px;
 }
+
+.color-black {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  color: black;
+}
+
 .bg-subscribe {
   background: url("./../assets/background-subscribe.jpg") no-repeat center center;
 }
@@ -374,6 +386,14 @@ body {
   line-height: 26px;
   padding-bottom: 46px;
 }
+
+.subscribe-subtitle-catalog {
+  color: black;
+  font-size: 22px;
+  line-height: 26px;
+  padding-bottom: 46px;
+}
+
 .card-description {
   margin: 0;
   font-size: 18px;
