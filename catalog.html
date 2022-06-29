@@ -108,7 +108,7 @@
         <input id="cost-to" max="900" placeholder="900" type="number">
 
         <div class="catalog-filter-buttons">
-          <input class="button-light" type="submit" value="Применить">
+          <input class="catalog-filter-button button-light" type="submit" value="Применить">
           <input class="button-reset" type="reset" value="Сбросить">
         </div>
       </fieldset>
@@ -117,27 +117,34 @@
     </form>
   </div>
 
-  <section>
-    <div>
-      <h2 class="visually-hidden">Сортировка</h2>
-      <p class="sorting">Найдено гостиниц: <span id="hotelCounter">38</span></p>
+  <section class="filter">
+    <h2 class="visually-hidden">Сортировка</h2>
+    <p class="sorting">Найдено гостиниц: <span id="hotelCounter">38</span></p>
+    <div class="filter-select-wrapper">
       <label class="visually-hidden" for="sorting">Сортировка</label>
       <select id="sorting" name="sorting">
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
     </div>
-    <div>
-      <input checked id="view-table"
-             name="house" type="radio" value="view-table">
-      <label for="view-table">Таблица</label>
-      <input id="view-card" name="house"
-             type="radio" value="view-card">
-      <label for="view-card">Карточка</label>
-      <input id="view-list" name="house"
-             type="radio" value="view-list">
-      <label for="view-list">Список</label>
+    <div class="filter-buttons-wrapper">
+      <div class="filter-button">
+        <input checked id="view-table"
+               name="house" type="radio" value="view-table">
+        <label for="view-table">Таблица</label>
+      </div>
+      <div class="filter-button">
+        <input id="view-card" name="house"
+               type="radio" value="view-card">
+        <label for="view-card">Карточка</label>
+      </div>
+      <div class="filter-button">
+        <input id="view-list" name="house"
+               type="radio" value="view-list">
+        <label for="view-list">Список</label>
+      </div>
     </div>
+
   </section>
 
   <section>
@@ -146,56 +153,81 @@
       <li class="card">
         <img alt="Amara Resort Spa" height="211" src="./assets/catalog/amara-resort-spa.jpg" width="300">
         <h3 class="advantages-card-title">Amara Resort &amp;&nbsp;Spa</h3>
+        <div class="card-hotel-cost">
         <p class="card-description">Гостиница</p>
         <p class="card-description">От&nbsp;4000&nbsp;₽</p>
+        </div>
+        <div class="card-buttons">
         <a class="card-button">
           подробнее
         </a>
-        <a class="card-button-favorite">
+        <a class="card-button card-button-favorite">
           в&nbsp;избранное
         </a>
+        </div>
+        <div class="card-rating">
         <div class="star star-repeat-4"></div>
         <p class="rating">Рейтинг: 8,5</p>
+        </div>
       </li>
       <li class="card">
         <img alt="Villias at poco Diablo" height="211" src="./assets/catalog/villas-at-poco-diablo.jpg" width="300">
         <h3 class="advantages-card-title">Villas at&nbsp;Poco Diablo</h3>
+        <div class="card-hotel-cost">
         <p class="card-description">Гостиница</p>
         <p class="card-description">От&nbsp;5000&nbsp;₽</p>
+        </div>
+        <div class="card-buttons">
         <a class="card-button">подробнее</a>
-        <a class="card-button-in-favorite">в&nbsp;избранном</a>
+        <a class="card-button card-button-in-favorite">в&nbsp;избранном</a>
+        </div>
+        <div class="card-rating">
         <div class="star star-repeat-4"></div>
         <p class="rating">Рейтинг: 9,2</p>
+        </div>
       </li>
       <li class="card">
         <img alt="Desert Quail Inn" height="211" src="./assets/catalog/desert-quail-inn.jpg" width="300">
         <h3 class="advantages-card-title">Desert Quail Inn</h3>
+        <div class="card-hotel-cost">
         <p class="card-description">Гостиница</p>
         <p class="card-description">От&nbsp;2500&nbsp;₽</p>
+        </div>
+        <div class="card-buttons">
         <a class="card-button">
           подробнее
         </a>
-        <a class="card-button-favorite">
+        <a class="card-button card-button-favorite">
           в&nbsp;избранное
         </a>
+        </div>
+        <div class="card-rating">
         <div class="star star-repeat-3"></div>
         <p class="rating">Рейтинг: 6,9</p>
+        </div>
       </li>
       <li class="card">
         <img alt="GreenTree Inn" height="211" src="./assets/catalog/green-tree-inn.jpg" width="300">
         <h3 class="advantages-card-title">GreenTree Inn</h3>
+        <div class="card-hotel-cost">
         <p class="card-description">Гостиница</p>
         <p class="card-description">От&nbsp;1500&nbsp;₽</p>
-        <a class="card-button">
+        </div>
+        <div class="card-buttons">
+        <a class="card-button br-4">
           подробнее
         </a>
-        <a class="card-button-favorite">
+        <a class="card-button br-4 card-button-favorite">
           в&nbsp;избранное
         </a>
+        </div>
+        <div class="card-rating">
         <div class="star star-repeat-2"></div>
         <p class="rating">Рейтинг: 5,0</p>
+        </div>
       </li>
     </ul>
+    <div class="pagination-row">
     <div class="pagination">
       <a class="pagination-item pagination-current">1</a>
       <a class="pagination-item">2</a>
@@ -204,11 +236,17 @@
       <a class="pagination-item">...</a>
       <a class="pagination-item">10</a>
     </div>
+      <div>
     <label class="per-page" for="per-page">Гостиниц на&nbsp;странице:</label>
     <select id="per-page" name="per-page">
+    </select>
+      </div>
+      <div>
       <option value="cheap">4</option>
       <option value="expensive">8</option>
-    </select>
+      </div>
+
+    </div>
   </section>
 
   <section class="subscribe">

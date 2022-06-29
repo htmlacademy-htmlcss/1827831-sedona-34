@@ -164,7 +164,6 @@ body {
 }
 
 
-
 .logo {
   display: block;
 }
@@ -177,7 +176,6 @@ body {
   background-size: 100% auto;
   text-align: center;
 }
-
 
 
 .about {
@@ -335,14 +333,63 @@ body {
   text-align: left;
 }
 
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.catalog-filter-button {
+
+}
+
 .button-light {
   color: white;
   background-color: #82B3D3;
   text-transform: uppercase;
+  padding: 9px 15px;
+  min-width: 160px;
+  min-height: 48px;
+  border-radius: 4px;
+  border: 0;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .button-reset {
   color: white;
+  background-color: transparent;
+  border: 0;
+  font-size: 16px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px;
+  margin-top: 72px;
+}
+
+.filter-select-wrapper {
+  display: flex;
+  align-items: center;
+  max-height: 48px;
+
+}
+
+.filter-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
 }
 
 .sorting {
@@ -351,6 +398,7 @@ body {
   font-weight: 700;
   color: black;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .advantages-card-title {
@@ -358,9 +406,8 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-  padding-bottom: 29px;
+  color: black;
+  padding: 16px 0px 16px 0px;
 }
 
 .color-black {
@@ -376,6 +423,7 @@ body {
 .bg-subscribe {
   background: url("./../assets/background-subscribe.jpg") no-repeat center center;
 }
+
 .subscription {
 
 }
@@ -394,18 +442,29 @@ body {
   padding-bottom: 46px;
 }
 
+.card-hotel-cost {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .card-description {
-  margin: 0;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: black;
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .card-button {
   color: white;
   background-color: #756157;
   text-transform: uppercase;
+  padding: 9px 15px;
+  max-width: 140px;
+  border-radius: 4px;
 }
 
 .card-button-favorite {
@@ -418,6 +477,13 @@ body {
   color: white;
   background-color: #7DB54F;
   text-transform: uppercase;
+}
+
+.card-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .star {
@@ -443,34 +509,51 @@ body {
 }
 
 .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: black;
   background-color: #F2F2F2;
-  width: 160px;
-  height: 37px;
-  font-size: 16px;
+  min-width: 160px;
+  min-height: 37px;
+  border-radius: 4px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   vertical-align: middle;
 }
 
+.pagination-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
 .pagination {
+  display: flex;
+  justify-content: space-between;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
 }
 
 .pagination-item {
-  display: inline-block;
-  width: 55px;
-  height: 55px;
+  display: flex;
+  margin: 0 8px 0 0;
+  min-width: 55px;
+  min-height: 55px;
   vertical-align: middle;
   background-color: #82B3D3;
-  color: #000000;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-current {
   background-color: #F2F2F2;
+  color: black;
 }
 
 .pagination-disabled {
@@ -571,13 +654,26 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 18px;
+  list-style-type: none;
+  padding: 0;
+  margin: 57px 72px 66px 72px;
 }
 
 
 .card {
-  margin: 18px;
+  padding: 18px;
 }
+
+
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
 
 .action {
   display: flex;
@@ -622,7 +718,7 @@ html {
 }
 
 .about-header {
-background-image: url("../assets/about-bg.svg");
+  background-image: url("../assets/about-bg.svg");
   min-height: 485px;
   display: flex;
   align-items: center;
@@ -655,9 +751,7 @@ background-image: url("../assets/about-bg.svg");
 .advantages-card-img {
   position: relative;
   flex-grow: 2;
-  }
-
-.cards {
-  list-style-type: none;
 }
+
+
 
