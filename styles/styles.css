@@ -229,6 +229,8 @@ body {
   min-height: 384px;
 }
 
+
+
 .advantages-item {
   display: flex;
   flex-direction: column;
@@ -650,13 +652,13 @@ html {
 }
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 66px;
   list-style-type: none;
   padding: 0;
-  margin: 57px 72px 66px 72px;
 }
 
 
