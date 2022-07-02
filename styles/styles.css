@@ -297,28 +297,25 @@ input::placeholder {
   line-height: 21px;
 }
 
-.advantages-item h3::before {
+.advantages-item .advantages-item-title::before {
   content: "";
   display: block;
   margin: 0 auto;
   width: 75px;
   height: 76px;
+  padding-top: 30px;
 }
 
-
-.advantages-icon-home h3::before {
+.advantages-icon-home .advantages-item-title::before {
   background: url("./../assets/home.svg") no-repeat center center;
-  padding-top: 30px;
 }
 
-.advantages-icon-food h3::before {
+.advantages-icon-food .advantages-item-title::before {
   background: url("./../assets/food.svg") no-repeat center center;
-  padding-top: 30px;
 }
 
-.advantages-icon-souvenirs h3::before {
+.advantages-icon-souvenirs .advantages-item-title::before {
   background: url("./../assets/souvenirs.svg") no-repeat center center;
-  padding-top: 30px;
 }
 
 
