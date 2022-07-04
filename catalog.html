@@ -67,53 +67,59 @@
     <form class="catalog-filter-wrapper">
       <fieldset class="filter-column">
         <legend class="catalog-filter-title">Инфраструктура:</legend>
-        <label class="checkbox">
-          <input checked name="Infrastructure" type="checkbox" value="pool">
-          Бассейн
-        </label>
-        <label class="checkbox">
-          <input checked name="Infrastructure" type="checkbox" value="parking">
-          Парковка
-        </label>
-        <label class="checkbox">
-          <input name="Infrastructure" type="checkbox" value="internet">
-          Wi-Fi
-        </label>
+        <input checked class="custom-checkbox" name="Infrastructure" type="checkbox" value="pool" id="checkbox-1">
+        <label class="checkbox" for="checkbox-1">Бассейн</label>
+        <input checked class="custom-checkbox" name="Infrastructure" type="checkbox" value="parking" id="checkbox-2">
+        <label class="checkbox" for="checkbox-2">Парковка</label>
+        <input class="custom-checkbox" name="Infrastructure" type="checkbox" value="internet" id="checkbox-3">
+        <label class="checkbox" for="checkbox-3">Wi-Fi</label>
       </fieldset>
       <fieldset class="filter-column">
         <legend class="catalog-filter-title">Тип жилья:</legend>
-
-        <label class="checkbox" for="place-1">
-          <input checked id="place-1" name="house" type="radio" value="hotel">
-          Гостиница
-        </label>
-
-        <label class="checkbox" for="place-2">
-          <input id="place-2" name="house"
-                 type="radio" value="motel">
-          Мотель
-        </label>
-
-        <label class="checkbox" for="place-3"><input id="place-3" name="house" type="radio" value="apartment">
-          Апартаменты
-        </label>
+        <input class="custom-radio" checked id="place-1" name="house" type="radio" value="hotel">
+        <label class="checkbox" for="place-1">Гостиница</label>
+        <input class="custom-radio" id="place-2" name="house" type="radio" value="motel">
+        <label class="checkbox" for="place-2">Мотель</label>
+        <input class="custom-radio" id="place-3" name="house" type="radio" value="apartment">
+        <label class="checkbox" for="place-3">Апартаменты</label>
       </fieldset>
 
+      <div class="filter-right">
+        <fieldset class="cost">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
-      <fieldset class="cost">
+          <div class="range-wrapper-inputs">
+            <div class="cost-min-max">
+              <label class="catalog-filter-label">
+                <input class="range-input " type="number" name="min-price" value="0">
+              </label>
+              <label class="catalog-filter-label">
+                <input class="range-input" type="number" value="9000" name="max-price" placeholder="до">
+              </label>
+            </div>
+            <label class="catalog-filter-buttons">
+              <input class="catalog-filter-button button-light" type="submit" value="Применить">
+            </label>
+          </div>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 8px; width: 197px">
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+            <label>
+              <input class="button-reset" type="reset" value="Сбросить">
+            </label>
+          </div>
 
-        <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-        <label class="" for="cost-from">от</label>
-        <input id="cost-from" min="0" placeholder="0" type="number">
-        <label class="" for="cost-to">до</label>
-        <input id="cost-to" max="900" placeholder="900" type="number">
 
-        <div class="catalog-filter-buttons">
-          <input class="catalog-filter-button button-light" type="submit" value="Применить">
-          <input class="button-reset" type="reset" value="Сбросить">
-        </div>
-      </fieldset>
-
+        </fieldset>
+      </div>
 
     </form>
   </div>
@@ -155,94 +161,94 @@
         <img alt="Amara Resort Spa" height="211" src="./assets/catalog/amara-resort-spa.jpg" width="300">
         <h3 class="advantages-card-title">Amara Resort &amp;&nbsp;Spa</h3>
         <div class="card-hotel-cost">
-        <p class="card-description">Гостиница</p>
-        <p class="card-description">От&nbsp;4000&nbsp;₽</p>
+          <p class="card-description">Гостиница</p>
+          <p class="card-description">От&nbsp;4000&nbsp;₽</p>
         </div>
         <div class="card-buttons">
-        <a class="card-button">
-          подробнее
-        </a>
-        <a class="card-button card-button-favorite">
-          в&nbsp;избранное
-        </a>
+          <a class="card-button">
+            подробнее
+          </a>
+          <a class="card-button card-button-favorite">
+            в&nbsp;избранное
+          </a>
         </div>
         <div class="card-rating">
-        <div class="star star-repeat-4"></div>
-        <p class="rating">Рейтинг: 8,5</p>
+          <div class="star star-repeat-4"></div>
+          <p class="rating">Рейтинг: 8,5</p>
         </div>
       </li>
       <li class="card">
         <img alt="Villias at poco Diablo" height="211" src="./assets/catalog/villas-at-poco-diablo.jpg" width="300">
         <h3 class="advantages-card-title">Villas at&nbsp;Poco Diablo</h3>
         <div class="card-hotel-cost">
-        <p class="card-description">Гостиница</p>
-        <p class="card-description">От&nbsp;5000&nbsp;₽</p>
+          <p class="card-description">Гостиница</p>
+          <p class="card-description">От&nbsp;5000&nbsp;₽</p>
         </div>
         <div class="card-buttons">
-        <a class="card-button">подробнее</a>
-        <a class="card-button card-button-in-favorite">в&nbsp;избранном</a>
+          <a class="card-button">подробнее</a>
+          <a class="card-button card-button-in-favorite">в&nbsp;избранном</a>
         </div>
         <div class="card-rating">
-        <div class="star star-repeat-4"></div>
-        <p class="rating">Рейтинг: 9,2</p>
+          <div class="star star-repeat-4"></div>
+          <p class="rating">Рейтинг: 9,2</p>
         </div>
       </li>
       <li class="card">
         <img alt="Desert Quail Inn" height="211" src="./assets/catalog/desert-quail-inn.jpg" width="300">
         <h3 class="advantages-card-title">Desert Quail Inn</h3>
         <div class="card-hotel-cost">
-        <p class="card-description">Гостиница</p>
-        <p class="card-description">От&nbsp;2500&nbsp;₽</p>
+          <p class="card-description">Гостиница</p>
+          <p class="card-description">От&nbsp;2500&nbsp;₽</p>
         </div>
         <div class="card-buttons">
-        <a class="card-button">
-          подробнее
-        </a>
-        <a class="card-button card-button-favorite">
-          в&nbsp;избранное
-        </a>
+          <a class="card-button">
+            подробнее
+          </a>
+          <a class="card-button card-button-favorite">
+            в&nbsp;избранное
+          </a>
         </div>
         <div class="card-rating">
-        <div class="star star-repeat-3"></div>
-        <p class="rating">Рейтинг: 6,9</p>
+          <div class="star star-repeat-3"></div>
+          <p class="rating">Рейтинг: 6,9</p>
         </div>
       </li>
       <li class="card">
         <img alt="GreenTree Inn" height="211" src="./assets/catalog/green-tree-inn.jpg" width="300">
         <h3 class="advantages-card-title">GreenTree Inn</h3>
         <div class="card-hotel-cost">
-        <p class="card-description">Гостиница</p>
-        <p class="card-description">От&nbsp;1500&nbsp;₽</p>
+          <p class="card-description">Гостиница</p>
+          <p class="card-description">От&nbsp;1500&nbsp;₽</p>
         </div>
         <div class="card-buttons">
-        <a class="card-button br-4">
-          подробнее
-        </a>
-        <a class="card-button br-4 card-button-favorite">
-          в&nbsp;избранное
-        </a>
+          <a class="card-button br-4">
+            подробнее
+          </a>
+          <a class="card-button br-4 card-button-favorite">
+            в&nbsp;избранное
+          </a>
         </div>
         <div class="card-rating">
-        <div class="star star-repeat-2"></div>
-        <p class="rating">Рейтинг: 5,0</p>
+          <div class="star star-repeat-2"></div>
+          <p class="rating">Рейтинг: 5,0</p>
         </div>
       </li>
     </ul>
     <div class="pagination-row">
-    <div class="pagination">
-      <a class="pagination-item pagination-current">1</a>
-      <a class="pagination-item">2</a>
-      <a class="pagination-item">3</a>
-      <a class="pagination-item">4</a>
-      <a class="pagination-item">...</a>
-      <a class="pagination-item">10</a>
-    </div>
+      <div class="pagination">
+        <a class="pagination-item pagination-current">1</a>
+        <a class="pagination-item">2</a>
+        <a class="pagination-item">3</a>
+        <a class="pagination-item">4</a>
+        <a class="pagination-item">...</a>
+        <a class="pagination-item">10</a>
+      </div>
       <div>
-    <label class="per-page" for="per-page">Гостиниц на&nbsp;странице:</label>
-    <select id="per-page" name="per-page">
-      <option value="cheap">4</option>
-      <option value="expensive">8</option>
-    </select>
+        <label class="per-page" for="per-page">Гостиниц на&nbsp;странице:</label>
+        <select id="per-page" name="per-page">
+          <option value="cheap">4</option>
+          <option value="expensive">8</option>
+        </select>
       </div>
     </div>
   </section>
@@ -250,7 +256,8 @@
   <section class="subscribe">
     <div class="subscription">
       <h3 class="subscribe-card-title color-black">Подпишитесь на&nbsp;рассылку</h3>
-      <p class="subscribe-subtitle-catalog">Только полезная информация и&nbsp;никакого спама,<br> честное бойскаутское!</p>
+      <p class="subscribe-subtitle-catalog">Только полезная информация и&nbsp;никакого спама,<br> честное бойскаутское!
+      </p>
       <form class="subscribe-email">
         <label class="visually-hidden" for="email">Ваш e-mail</label>
         <input class="email" id="email" type="text" placeholder="Ваш e-mail">

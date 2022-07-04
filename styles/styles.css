@@ -364,7 +364,7 @@ input::placeholder {
 }
 
 .catalog-filter-title {
-
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -378,6 +378,70 @@ input::placeholder {
   font-weight: 400;
   color: white;
   text-align: left;
+  margin-bottom: 15px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: #FFFFFF;
+}
+
+.custom-checkbox:checked+label::before {
+  background: url("../assets/checkbox-checked.svg") no-repeat;
+}
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background: #FFFFFF;
+}
+
+.custom-radio:checked+label::before {
+  background: url("../assets/radio-button-checked.svg") no-repeat;
 }
 
 .catalog-filter-buttons {
@@ -402,7 +466,6 @@ input::placeholder {
   border-radius: 4px;
   border: 0;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .button-reset {
@@ -410,6 +473,10 @@ input::placeholder {
   background-color: transparent;
   border: 0;
   font-size: 16px;
+  padding: 9px 15px;
+  min-width: 160px;
+  min-height: 48px;
+  margin-bottom: 0;
 }
 
 .filter {
@@ -714,11 +781,34 @@ html {
 .filter-column {
   display: flex;
   flex-direction: column;
+  border: 0;
+}
+
+.filter-right {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 148px;
 }
 
 .cost {
   display: flex;
+  flex-direction: column;
   margin-left: 175px;
+  padding: 0;
+  border: none;
+  min-width: 520px;
+}
+
+.cost-min-max {
+  display: flex;
+  justify-content: space-between;
+  max-width: 288px;
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cards {
@@ -825,5 +915,71 @@ html {
   flex-grow: 2;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: gainsboro;
+  min-width: 288px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: white;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 0px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
 
 
+
+.range-input::placeholder {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  content: "от";
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+  width: 50%;
+}
+
+.range-input {
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: solid 2px white;
+  appearance: textfield;
+  width: 100%;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
