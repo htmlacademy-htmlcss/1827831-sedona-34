@@ -19,9 +19,18 @@ body {
   padding: 0 15px;
 }
 
+.catalog-filter-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 70px;
+}
+
 .catalog-first-screen {
   background-image: url("./../assets/catalog/background-catalog.svg");
   min-height: 394px;
+
 }
 
 @font-face {
@@ -391,31 +400,34 @@ input::placeholder {
 }
 
 .color-white {
-  margin: 0;
+  font-size: 60px;
+  margin-bottom: 10px;
   color: #ffffff;
   padding-top: 35px;
-  margin-left: 70px;
 }
 
 .breadcrumbs {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-direction: row;
   list-style-type: none;
+  padding: 0;
 }
 
 .breadcrumbs-item {
   color: white;
-  margin-left: 70px;
 }
 
-.breadcrumbs-arrow::after {
-  content: "";
-  position: absolute;
-  display: block;
-  background-image: url("../assets/catalog/arrow.png");
+.breadcrumbs-item:focus:before {
+  box-shadow: 0 0 0 3px #83B3D3;
 }
+
+
+
+.breadcrumbs-arrow {
+  padding: 5px 10px 5px 10px;
+}
+
 
 .catalog-filter-title {
   margin-bottom: 30px;
@@ -424,6 +436,14 @@ input::placeholder {
   font-weight: 700;
   color: white;
   text-align: left;
+  padding-inline: 0;
+  padding-block-start: 0;
+  margin-inline: 0;
+}
+
+.catalog-fieldset {
+  display: flex;
+  justify-content: space-between;
 }
 
 .checkbox {
@@ -465,6 +485,27 @@ input::placeholder {
   background-color: #ffffff;
 }
 
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  background-color: #ffffff;
+  opacity: 60%;
+  border-radius: 3px;
+}
+
+.custom-checkbox:not(:disabled):checked+label:hover::before {
+  background-color: #ffffff;
+  opacity: 60%;
+  border-radius: 3px;
+}
+
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 3px #83B3D3;
+  border-radius: 3px;
+
+}
+
+
+
 .custom-checkbox:checked+label::before {
   background: url("../assets/checkbox-checked.svg") no-repeat;
 }
@@ -499,6 +540,15 @@ input::placeholder {
 
 .custom-radio:checked+label::before {
   background: url("../assets/radio-button-checked.svg") no-repeat;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus+label::before {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.custom-radio:focus:not(:checked)+label::before {
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .catalog-filter-buttons {
@@ -585,7 +635,7 @@ input::placeholder {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  padding: 16px 0px 16px 0px;
+  padding-top: 16px;
 }
 
 .subscribe-card-title {
@@ -656,7 +706,7 @@ input::placeholder {
   line-height: 21px;
   font-weight: 400;
   color: black;
-  width: 100%;
+  min-width: 140px;
   margin-bottom: 16px;
 }
 
@@ -667,6 +717,8 @@ input::placeholder {
   padding: 9px 15px;
   max-width: 140px;
   border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .card-button-favorite {
@@ -716,7 +768,7 @@ input::placeholder {
   justify-content: center;
   color: black;
   background-color: #f2f2f2;
-  min-width: 160px;
+  min-width: 140px;
   min-height: 37px;
   border-radius: 4px;
   line-height: 20px;
@@ -752,6 +804,8 @@ input::placeholder {
   color: #ffffff;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
+
 }
 
 .pagination-current {
@@ -839,7 +893,7 @@ html {
 
 .catalog-filter-wrapper {
   display: flex;
-  margin-left: 70px;
+  justify-content: space-between;
   margin-bottom: 70px;
 }
 
@@ -847,6 +901,11 @@ html {
   display: flex;
   flex-direction: column;
   border: 0;
+  padding: 0;
+  margin-right: 70px;
+  margin-inline-start: 0;
+  padding-inline: 0;
+  padding-block-start: 0;
 }
 
 .filter-right {
@@ -858,10 +917,12 @@ html {
 .cost {
   display: flex;
   flex-direction: column;
-  margin-left: 175px;
   padding: 0;
   border: none;
   min-width: 520px;
+  padding-inline: 0;
+  padding-block-start: 0;
+  margin-inline: 0;
 }
 
 .cost-min-max {
@@ -1040,7 +1101,6 @@ html {
   text-align: center;
   background-color: transparent;
   border: solid 2px white;
-  appearance: textfield;
   width: 100%;
 }
 

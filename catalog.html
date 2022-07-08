@@ -52,21 +52,26 @@
 <!-- Тело сайта -->
 <main>
   <div class="catalog-first-screen">
+    <div class="catalog-filter-main">
     <h1 class="color-white">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-item breadcrumbs-arrow">
+        <a class="breadcrumbs-item">
           <img src="./assets/catalog/union.svg" alt="Домой" height="13" width="13">
           <span class="visually-hidden">Домой</span>
         </a>
       </li>
       <li class="breadcrumbs-item">
+        <a class="breadcrumbs-arrow">
+        <img src="./assets/catalog/arrow.svg" alt="Стрелка" height="8" width="5">
+        </a>
         <a>Гостиницы</a>
       </li>
     </ul>
 
     <h2 class="visually-hidden">Список товаров с&nbsp;фильтрами</h2>
     <form action="https://echo.htmlacademy.ru" class="catalog-filter-wrapper">
+      <div class="catalog-fieldset">
       <fieldset class="filter-column">
         <legend class="catalog-filter-title">Инфраструктура:</legend>
         <input checked class="custom-checkbox" name="Infrastructure" type="checkbox" value="pool" id="checkbox-1">
@@ -85,7 +90,7 @@
         <input class="custom-radio" id="place-3" name="house" type="radio" value="apartment">
         <label class="checkbox" for="place-3">Апартаменты</label>
       </fieldset>
-
+      </div>
       <div class="filter-right">
         <fieldset class="cost">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
@@ -123,6 +128,7 @@
       </div>
 
     </form>
+    </div>
   </div>
 
   <section>
