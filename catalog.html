@@ -12,12 +12,12 @@
 
 <header class="page-header">
   <nav class="navigation">
+    <div class="navigation-item-logo">
+      <a class="navigation-link-logo">
+        <img class="logo" src="./assets/logo.svg" width="139" height="70" alt="логотип Седона">
+      </a>
+    </div>
     <ul class="navigation-list">
-      <li class="navigation-item-logo">
-        <a class="navigation-link-logo">
-          <img class="logo" src="./assets/logo.svg" width="139" height="70" alt="логотип Седона">
-        </a>
-      </li>
       <li class="navigation-item">
         <a class="navigation-link">Главная</a>
       </li>
@@ -25,24 +25,25 @@
         <a class="navigation-link" href="#">О&nbsp;Седоне</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="./catalog.html">Гостиницы</a>
+        <a class="navigation-link catalog-page" href="./catalog.html">Гостиницы</a>
       </li>
     </ul>
     <ul class="navigation-user">
       <li class="navigation-user-item">
-        <a class="navigation-link">
+        <a href="#" class="navigation-link">
           <img src="./assets/search.svg" alt="Поиск" height="19" width="19">
-          <span class="visually-hidden">search</span>
+          <span class="visually-hidden">Поиск</span>
         </a>
       </li>
       <li class="navigation-user-item">
-        <a class="navigation-link">
+        <a href="#" class="navigation-link">
           <img src="./assets/favorite.svg" alt="Избранное" height="17" width="19">
-          <span class="visually-hidden">favorite</span>
+          <span class="visually-hidden">Избранное</span>
+          <span class="favorites">12</span>
         </a>
       </li>
       <li class="navigation-user-item">
-        <a class="navigation-button">Хочу сюда!</a>
+        <a href="#" class="navigation-button">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
@@ -51,20 +52,26 @@
 <!-- Тело сайта -->
 <main>
   <div class="catalog-first-screen">
+    <div class="catalog-filter-main">
     <h1 class="color-white">Гостиницы Седоны</h1>
-    <ol class="breadcrumbs">
+    <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-item">
+          <img src="./assets/catalog/union.svg" alt="Домой" height="13" width="13">
           <span class="visually-hidden">Домой</span>
         </a>
       </li>
       <li class="breadcrumbs-item">
+        <a class="breadcrumbs-arrow">
+        <img src="./assets/catalog/arrow.svg" alt="Стрелка" height="8" width="5">
+        </a>
         <a>Гостиницы</a>
       </li>
-    </ol>
+    </ul>
 
     <h2 class="visually-hidden">Список товаров с&nbsp;фильтрами</h2>
-    <form class="catalog-filter-wrapper">
+    <form action="https://echo.htmlacademy.ru" class="catalog-filter-wrapper">
+      <div class="catalog-fieldset">
       <fieldset class="filter-column">
         <legend class="catalog-filter-title">Инфраструктура:</legend>
         <input checked class="custom-checkbox" name="Infrastructure" type="checkbox" value="pool" id="checkbox-1">
@@ -83,11 +90,10 @@
         <input class="custom-radio" id="place-3" name="house" type="radio" value="apartment">
         <label class="checkbox" for="place-3">Апартаменты</label>
       </fieldset>
-
+      </div>
       <div class="filter-right">
         <fieldset class="cost">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
           <div class="range-wrapper-inputs">
             <div class="cost-min-max">
               <label class="catalog-filter-label">
@@ -104,10 +110,10 @@
           <div class="range">
             <div class="range-scale">
               <div class="range-bar" style="left: 8px; width: 197px">
-                <button class="range-toggle toggle-min">
+                <button class="range-toggle toggle-min" type="submit">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
-                <button class="range-toggle toggle-max">
+                <button class="range-toggle toggle-max" type="submit">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </div>
@@ -122,11 +128,15 @@
       </div>
 
     </form>
+    </div>
   </div>
 
-  <section class="filter">
+  <section>
+    <form action="https://echo.htmlacademy.ru" class="filter" action="">
     <h2 class="visually-hidden">Сортировка</h2>
+
     <p class="sorting">Найдено гостиниц: <span id="hotelCounter">38</span></p>
+
     <div class="filter-select-wrapper">
       <label class="visually-hidden" for="sorting">Сортировка</label>
       <select id="sorting" name="sorting">
@@ -136,22 +146,16 @@
     </div>
     <div class="filter-buttons-wrapper">
       <div class="filter-button">
-        <input checked id="view-table"
-               name="house" type="radio" value="view-table">
-        <label for="view-table">Таблица</label>
+        <a href="#" class="view-table"></a>
       </div>
       <div class="filter-button">
-        <input id="view-card" name="house"
-               type="radio" value="view-card">
-        <label for="view-card">Карточка</label>
+        <a href="#" class="view-card"></a>
       </div>
       <div class="filter-button">
-        <input id="view-list" name="house"
-               type="radio" value="view-list">
-        <label for="view-list">Список</label>
+        <a href="#" class="view-list"></a>
       </div>
     </div>
-
+    </form>
   </section>
 
   <section>
@@ -165,10 +169,10 @@
           <p class="card-description">От&nbsp;4000&nbsp;₽</p>
         </div>
         <div class="card-buttons">
-          <a class="card-button">
+          <a href="#" class="card-button">
             подробнее
           </a>
-          <a class="card-button card-button-favorite">
+          <a href="#" class="card-button card-button-favorite">
             в&nbsp;избранное
           </a>
         </div>
@@ -185,8 +189,8 @@
           <p class="card-description">От&nbsp;5000&nbsp;₽</p>
         </div>
         <div class="card-buttons">
-          <a class="card-button">подробнее</a>
-          <a class="card-button card-button-in-favorite">в&nbsp;избранном</a>
+          <a href="#" class="card-button">подробнее</a>
+          <a href="#" class="card-button card-button-in-favorite">в&nbsp;избранном</a>
         </div>
         <div class="card-rating">
           <div class="star star-repeat-4"></div>
@@ -201,10 +205,10 @@
           <p class="card-description">От&nbsp;2500&nbsp;₽</p>
         </div>
         <div class="card-buttons">
-          <a class="card-button">
+          <a href="#" class="card-button">
             подробнее
           </a>
-          <a class="card-button card-button-favorite">
+          <a href="#" class="card-button card-button-favorite">
             в&nbsp;избранное
           </a>
         </div>
@@ -221,10 +225,10 @@
           <p class="card-description">От&nbsp;1500&nbsp;₽</p>
         </div>
         <div class="card-buttons">
-          <a class="card-button br-4">
+          <a href="#" class="card-button br-4">
             подробнее
           </a>
-          <a class="card-button br-4 card-button-favorite">
+          <a href="#" class="card-button br-4 card-button-favorite">
             в&nbsp;избранное
           </a>
         </div>
@@ -258,7 +262,7 @@
       <h3 class="subscribe-card-title color-black">Подпишитесь на&nbsp;рассылку</h3>
       <p class="subscribe-subtitle-catalog">Только полезная информация и&nbsp;никакого спама,<br> честное бойскаутское!
       </p>
-      <form class="subscribe-email">
+      <form action="https://echo.htmlacademy.ru" class="subscribe-email">
         <label class="visually-hidden" for="email">Ваш e-mail</label>
         <input class="email" id="email" type="text" placeholder="Ваш e-mail">
         <button class="email-button" type="submit">Подписаться</button>

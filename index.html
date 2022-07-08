@@ -13,14 +13,14 @@
 
 <header class="page-header">
   <nav class="navigation">
+    <div class="navigation-item-logo">
+      <a class="navigation-link-logo">
+        <img class="logo" src="./assets/logo.svg" width="139" height="70" alt="логотип Седона">
+      </a>
+    </div>
     <ul class="navigation-list">
-      <li class="navigation-item-logo">
-        <a class="navigation-link-logo">
-          <img class="logo" src="./assets/logo.svg" width="139" height="70" alt="логотип Седона">
-        </a>
-      </li>
       <li class="navigation-item">
-        <a class="navigation-link">Главная</a>
+        <a class="navigation-link own-page">Главная</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#">О&nbsp;Седоне</a>
@@ -31,19 +31,20 @@
     </ul>
     <ul class="navigation-user">
       <li class="navigation-user-item">
-        <a class="navigation-link">
+        <a href="#" class="navigation-link">
           <img src="./assets/search.svg" alt="Поиск" height="19" width="19">
-          <span class="visually-hidden">search</span>
+          <span class="visually-hidden">Поиск</span>
         </a>
       </li>
       <li class="navigation-user-item">
-        <a class="navigation-link">
+        <a href="#" class="navigation-link">
           <img src="./assets/favorite.svg" alt="Избранное" height="17" width="19">
-          <span class="visually-hidden">favorite</span>
+          <span class="visually-hidden">Избранное</span>
+          <span class="favorites">12</span>
         </a>
       </li>
       <li class="navigation-user-item">
-        <a class="navigation-button">Хочу сюда!</a>
+        <a href="#" class="navigation-button">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
@@ -72,7 +73,7 @@
             <p class="advantages-item-text">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя
               жизнь</p>
           </div>
-          <img src="./assets/photo-sedona.jpg" alt="Фото Седоны" width="800" height="384">
+          <img src="./assets/photo-sedona.jpg" alt="Фото Седоны" >
         </div>
         <div class="advantages-items-wrapper">
           <div class="advantages-item background-grey advantages-icon-home advantages-icon-cards">
@@ -132,7 +133,7 @@
       <div class="subscription">
         <h3 class="subscribe-card-title subscribe-card-title-main">Подпишитесь на&nbsp;рассылку</h3>
         <p class="subscribe-subtitle">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-email">
+        <form action="https://echo.htmlacademy.ru" class="subscribe-email">
           <label class="visually-hidden" for="email">Ваш e-mail</label>
           <input class="email" id="email" type="text" placeholder="Ваш e-mail">
           <button class="email-button" type="submit">Подписаться</button>
