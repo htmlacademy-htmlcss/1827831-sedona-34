@@ -28,7 +28,7 @@ body {
 }
 
 .catalog-first-screen {
-  background-image: url("./../assets/catalog/background-catalog.svg");
+  background-image: url("./../assets/catalog/background-catalog.jpg");
   min-height: 394px;
 
 }
@@ -147,6 +147,18 @@ body {
   color: black;
 }
 
+.navigation-link:hover {
+  color: #595959;
+}
+
+.navigation-link:focus {
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.navigation-link:active {
+  margin-top: 20px;
+}
 
 .own-page::after {
   content: "";
@@ -202,6 +214,22 @@ body {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
+}
+
+.navigation-button:hover {
+  background: #9d8376;
+  border-radius: 4px;
+}
+
+.navigation-button:focus {
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.navigation-button:active {
+  color: white;
+  opacity: 30%;
+  border-radius: 4px;
 }
 
 .navigation-user {
@@ -280,6 +308,25 @@ input::placeholder {
   border-radius: 0 4px 4px 0;
 }
 
+.email-button:hover {
+  background-color: #68a2ca;
+}
+
+.email-button:focus {
+  outline: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.email-button:active {
+  color: white;
+  opacity: 30%;
+}
+
+.email-button:disabled {
+  color: white;
+  background-color: #82b3d3;
+}
+
 .button-search {
   display: flex;
   justify-content: center;
@@ -293,6 +340,22 @@ input::placeholder {
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 93px;
+  border-radius: 4px;
+}
+
+.button-search:hover {
+  background: #9d8376;
+  border-radius: 4px;
+}
+
+.button-search:focus {
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.button-search:active {
+  color: white;
+  opacity: 30%;
   border-radius: 4px;
 }
 
@@ -412,6 +475,21 @@ input::placeholder {
   justify-content: flex-start;
   list-style-type: none;
   padding: 0;
+}
+
+.breadcrumbs:hover {
+  color: white;
+  opacity: 60%;
+}
+
+.breadcrumbs:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.breadcrumbs:active {
+  color: white;
+  opacity: 30%;
 }
 
 .breadcrumbs-item {
@@ -575,6 +653,26 @@ input::placeholder {
   font-weight: 700;
 }
 
+.button-light:hover {
+  background-color: #68a2ca;
+}
+
+.button-light:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.button-light:active {
+  color: #ffffff;
+  opacity: 30%;
+}
+
+.button-light:disabled {
+  color: white;
+  background-color: #83b3d3;
+}
+
 .button-reset {
   color: white;
   background-color: transparent;
@@ -584,6 +682,21 @@ input::placeholder {
   min-width: 160px;
   min-height: 48px;
   margin-bottom: 0;
+}
+
+.button-reset:hover {
+  color: white;
+  opacity: 60%;
+}
+
+.button-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-reset:active {
+  color: white;
+  opacity: 30%;
 }
 
 .filter {
@@ -606,22 +719,25 @@ input::placeholder {
 .view-table {
   width: 48px;
   height: 48px;
+  border: solid black;
   border-radius: 4px;
-  background-image: url("../assets/catalog/table.svg");
+  background: url("../assets/catalog/icon-table.png") no-repeat center;
 }
 
 .view-card {
   width: 48px;
   height: 48px;
+  border: solid #e5e5e5;
   border-radius: 4px;
-  background-image: url("../assets/catalog/card.svg");
+  background: url("../assets/catalog/icon-slideshow.png") no-repeat center;
 }
 
 .view-list {
   width: 48px;
   height: 48px;
+  border: solid #e5e5e5;
   border-radius: 4px;
-  background-image: url("../assets/catalog/list.svg");
+  background: url("../assets/catalog/icon-list.png") no-repeat center;
 }
 
 .filter-buttons-wrapper {
@@ -748,16 +864,62 @@ input::placeholder {
   font-weight: 700;
 }
 
+.card-button-more:hover {
+  background: #9d8376;
+  border-radius: 4px;
+}
+
+.card-button-more:focus {
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.card-button-more:active {
+  color: white;
+  opacity: 30%;
+  border-radius: 4px;
+}
+
+.card-button-favorite:hover {
+  background: #68a2ca;
+  border-radius: 4px;
+}
+
+.card-button-favorite:focus {
+  background: #68a2ca;
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.card-button-favorite:active {
+  background: #68a2ca;
+  border-radius: 4px;
+  color: white;
+  opacity: 30%;
+  border-radius: 4px;
+}
+
 .card-button-favorite {
   color: white;
   background-color: #82b3d3;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .card-button-in-favorite {
   color: white;
   background-color: #7db54f;
   text-transform: uppercase;
+}
+
+.card-button-in-favorite:hover {
+  background-color: #9ce262;
+}
+
+.card-button-in-favorite:focus {
+  background-color: #9ce262;
+  outline: 3px solid #ffffff;
+  border-radius: 4px;
 }
 
 .card-rating {
@@ -834,6 +996,27 @@ input::placeholder {
   border-radius: 4px;
 
 }
+
+.pagination-item:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-item:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.pagination-item:active {
+  color: #ffffff;
+  opacity: 30%;
+}
+
+.pagination-item:disabled {
+  color: white;
+  background-color: #83b3d3;
+}
+
 
 .pagination-current {
   background-color: #f2f2f2;
@@ -958,6 +1141,21 @@ html {
   max-width: 288px;
 }
 
+.cost-min-max:hover {
+  outline: 2px solid #ffffff;
+  opacity: 60%;
+}
+
+.cost-min-max:focus {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px #81b3d2;
+}
+
+.cost-min-max:active{
+  border: 2px solid #ffffff;
+  background-color: #756257;
+}
+
 .range {
   display: flex;
   justify-content: space-between;
@@ -1032,8 +1230,10 @@ html {
   margin-bottom: 8px;
 }
 
+
+
 .about-header {
-  background-image: url("../assets/about-bg.svg");
+  background-image: url("../assets/about-bg.jpg");
   min-height: 485px;
   display: flex;
   align-items: center;
@@ -1090,6 +1290,18 @@ html {
   border: 0px;
 }
 
+.range-toggle:focus {
+  border: 3px solid #83b3d3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:active {
+  border: 2px solid #83b3d3;
+  box-shadow: 0px 17px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
 .toggle-min {
   top: -8px;
   left: -10px;
@@ -1118,11 +1330,11 @@ html {
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 5px;
   width: 50%;
 }
 
 .range-input {
+  color: white;
   padding: 0 2px;
   font: inherit;
   text-align: center;
