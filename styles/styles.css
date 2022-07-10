@@ -14,7 +14,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -501,7 +501,6 @@ input::placeholder {
 }
 
 
-
 .breadcrumbs-arrow {
   padding: 5px 10px 5px 10px;
 }
@@ -541,13 +540,13 @@ input::placeholder {
   background-position: center;
 }
 
-.custom-checkbox+label {
+.custom-checkbox + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.custom-checkbox+label::before {
+.custom-checkbox + label::before {
   content: '';
   display: inline-block;
   width: 1em;
@@ -564,27 +563,26 @@ input::placeholder {
 }
 
 /* стили при наведении курсора на checkbox */
-.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   background-color: #ffffff;
   opacity: 60%;
   border-radius: 3px;
 }
 
-.custom-checkbox:not(:disabled):checked+label:hover::before {
+.custom-checkbox:not(:disabled):checked + label:hover::before {
   background-color: #ffffff;
   opacity: 60%;
   border-radius: 3px;
 }
 
-.custom-checkbox:focus+label::before {
+.custom-checkbox:focus + label::before {
   box-shadow: 0 0 0 3px #83B3D3;
   border-radius: 3px;
 
 }
 
 
-
-.custom-checkbox:checked+label::before {
+.custom-checkbox:checked + label::before {
   background: url("../assets/checkbox-checked.svg") no-repeat;
 }
 
@@ -595,13 +593,13 @@ input::placeholder {
   background-position: center;
 }
 
-.custom-radio+label {
+.custom-radio + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.custom-radio+label::before {
+.custom-radio + label::before {
   content: '';
   display: inline-block;
   width: 20px;
@@ -616,16 +614,16 @@ input::placeholder {
   background: #ffffff;
 }
 
-.custom-radio:checked+label::before {
+.custom-radio:checked + label::before {
   background: url("../assets/radio-button-checked.svg") no-repeat;
 }
 
 /* стили для радиокнопки, находящейся в фокусе */
-.custom-radio:focus+label::before {
+.custom-radio:focus + label::before {
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
-.custom-radio:focus:not(:checked)+label::before {
+.custom-radio:focus:not(:checked) + label::before {
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
@@ -791,10 +789,9 @@ input::placeholder {
   text-transform: uppercase;
 }
 
-.subscribe-card-title-main  {
+.subscribe-card-title-main {
   color: #ffffff;
 }
-
 
 
 .color-black {
@@ -1151,7 +1148,7 @@ html {
   box-shadow: 0 0 0 3px #81b3d2;
 }
 
-.cost-min-max:active{
+.cost-min-max:active {
   border: 2px solid #ffffff;
   background-color: #756257;
 }
@@ -1178,14 +1175,12 @@ html {
 }
 
 
-
 .card-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-
 
 
 .action {
@@ -1223,6 +1218,15 @@ html {
   flex-wrap: wrap;
 }
 
+.footer-social-item:hover {
+  background-color: gainsboro;
+}
+
+.footer-social-item:focus {
+  outline: 2px solid #81b3d2;
+  background-color: gainsboro;
+}
+
 .footer-social-item {
   min-width: 24px;
   min-height: 17px;
@@ -1230,7 +1234,9 @@ html {
   margin-bottom: 8px;
 }
 
+.footer-social-item:focus {
 
+}
 
 .about-header {
   background-image: url("../assets/about-bg.jpg");
@@ -1319,21 +1325,32 @@ html {
 }
 
 
-
-.range-input::placeholder {
-  display: flex;
-  justify-content: space-between;
-  color: #ffffff;
-  content: "от";
-  position: absolute;
-}
-
 .catalog-filter-label {
+  position: relative;
   display: flex;
   width: 50%;
 }
 
+.catalog-filter-label-from:after {
+  content: "от";
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #878181;
+  line-height: 12px;
+  padding: 0 14px;
+}
+
+.catalog-filter-label-to:after {
+  content: "до";
+}
+
 .range-input {
+  position: relative;
   color: white;
   padding: 0 2px;
   font: inherit;
@@ -1342,6 +1359,18 @@ html {
   border: solid 2px white;
   width: 100%;
 }
+
+.range-input::placeholder {
+  /*position: absolute;*/
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid red;
+  /*width: 30px;*/
+  text-align: right;
+  /*vertical-align: center;*/
+  z-index: 10;
+}
+
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
