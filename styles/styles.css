@@ -29,6 +29,7 @@ body {
 
 .catalog-first-screen {
   background-image: url("./../assets/catalog/background-catalog.jpg");
+  background-repeat: no-repeat;
   min-height: 394px;
 
 }
@@ -110,7 +111,7 @@ body {
 }
 
 .navigation ul {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .navigation-list {
@@ -124,16 +125,19 @@ body {
 }
 
 .navigation-item-logo {
-  margin: 0 0 0 70px;
+  margin: 0 47px 0 80px;
 
 }
 
 .navigation-item {
-  margin: auto 20px;
+  margin: auto 0;
+  padding-right: 34px;
 }
 
 .navigation-user-item {
-  margin: auto 20px;
+  display: flex;
+  justify-content: center;
+  margin: auto 90px auto auto;
 }
 
 .navigation-link {
@@ -214,6 +218,8 @@ body {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
+  border-radius: 4px;
+  margin: 15px 75px auto auto;
 }
 
 .navigation-button:hover {
@@ -234,8 +240,9 @@ body {
 
 .navigation-user {
   display: flex;
+  justify-content: center;
   list-style-type: none;
-  margin: 20px 70px 20px auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -1347,6 +1354,16 @@ html {
 
 .catalog-filter-label-to:after {
   content: "до";
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #878181;
+  line-height: 12px;
+  padding: 0 14px;
 }
 
 .range-input {
