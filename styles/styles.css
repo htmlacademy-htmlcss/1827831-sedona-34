@@ -21,6 +21,7 @@ body {
   justify-content: center;
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-filter-main {
@@ -28,7 +29,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 0 80px;
+  margin: 2px 71px;
 }
 
 .catalog-first-screen {
@@ -138,6 +139,14 @@ body {
   min-width: 500px;
   list-style-type: none;
   flex-wrap: wrap;
+}
+
+.sorting-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .navigation-item-logo {
@@ -513,7 +522,7 @@ input::placeholder {
 
 .color-white {
   font-size: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   color: #ffffff;
   padding-top: 18px;
 }
@@ -749,12 +758,11 @@ input::placeholder {
 
 .filter {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0px;
-  padding-top: 38px;
+  margin: 40px 72px 33px 72px;
 }
 
 .filter-select-wrapper {
@@ -796,6 +804,7 @@ input::placeholder {
   width: 160px;
   height: 48px;
   background-color: #ffffff;
+  margin-left: auto;
 }
 
 .filter-buttons-wrapper svg {
@@ -818,6 +827,7 @@ input::placeholder {
   color: black;
   text-align: left;
   text-transform: uppercase;
+  width: 50%;
 }
 
 .advantages-card-title {
@@ -826,7 +836,7 @@ input::placeholder {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .subscribe-card-title {
@@ -1214,6 +1224,9 @@ html {
   margin-bottom: 66px;
   list-style-type: none;
   padding: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 
@@ -1328,35 +1341,35 @@ html {
   height: 20px;
   border-radius: 5px;
   background: #ffffff;
-  border: 0px;
+  border: 0;
 }
 
 .range-toggle:focus {
   border: 3px solid #83b3d3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
 .range-toggle:active {
   border: 2px solid #83b3d3;
-  box-shadow: 0px 17px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 17px 15px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: -7px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -33px;
 }
 
 .range-wrapper-inputs {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 
