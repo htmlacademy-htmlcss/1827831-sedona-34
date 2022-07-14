@@ -766,10 +766,49 @@ input::placeholder {
 }
 
 .filter-select-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
-  max-height: 48px;
+  margin-right: auto;
+}
 
+/* Control */
+.select-control {
+  width: 287px;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  background-image: url("../assets/catalog/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: #83b3d3;
+}
+
+.select-control:active {
+  color: black;
+  opacity: 30%;
+}
+
+.per-page-choice {
+  width: 160px;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  background-image: url("../assets/catalog/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
 }
 
 .view-table {
