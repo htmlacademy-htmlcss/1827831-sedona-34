@@ -221,7 +221,7 @@ body {
   width: 93px;
   height: 2px;
   background-color: #756257;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .favorites {
@@ -841,11 +841,12 @@ input::placeholder {
 
 .subscribe-card-title {
   display: flex;
+  justify-content: center;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  padding: 0 0 6px 0;
-  margin: 94px 0 0 0;
+  padding: 0 0 32px 0;
+  margin: 60px 0 0 0;
   text-transform: uppercase;
 }
 
@@ -855,11 +856,9 @@ input::placeholder {
 
 
 .color-black {
-  margin: 0;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 29px;
   color: black;
 }
 
@@ -872,7 +871,7 @@ input::placeholder {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 411px;
+  padding-bottom: 102px;
   text-align: center;
   margin: 0;
 }
@@ -890,8 +889,10 @@ input::placeholder {
   color: black;
   font-size: 22px;
   line-height: 26px;
-  padding-bottom: 46px;
   min-width: 476px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: 46px;
 }
 
 .card-hotel-cost {
@@ -915,10 +916,13 @@ input::placeholder {
   background-color: #756157;
   text-transform: uppercase;
   padding: 9px 15px;
-  max-width: 140px;
+  min-width: 140px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .card-button-more:hover {
@@ -1016,10 +1020,13 @@ input::placeholder {
   min-width: 140px;
   min-height: 37px;
   border-radius: 4px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   vertical-align: middle;
+  margin-block: 0;
+  margin-top: 16px;
 }
 
 .pagination-row {
@@ -1029,21 +1036,30 @@ input::placeholder {
   flex-wrap: wrap;
   padding: 30px 0;
   border-top: 1px solid #e6e6e6;
+  margin: 66px 72px 33px 72px;
 }
 
 .pagination {
   display: flex;
-  justify-content: space-between;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  width: 50%;
+}
+
+.pagination-amount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
 }
 
 .pagination-item {
   display: flex;
   margin: 0 8px 0 0;
-  min-width: 55px;
-  min-height: 55px;
+  width: 60px;
+  height: 60px;
   vertical-align: middle;
   background-color: #82b3d3;
   color: #ffffff;
@@ -1086,6 +1102,7 @@ input::placeholder {
 .per-page {
   font-size: 18px;
   line-height: 21px;
+  margin-right: 180px;
 }
 
 .about__title {
@@ -1219,7 +1236,7 @@ html {
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 18px;
+  column-gap: 16px;
   justify-content: center;
   margin-bottom: 66px;
   list-style-type: none;
@@ -1256,7 +1273,7 @@ html {
 .page-footer-container {
   display: flex;
   width: 100%;
-  margin: 10px 43px;
+  padding: 0 43px;
   align-items: center;
 }
 
