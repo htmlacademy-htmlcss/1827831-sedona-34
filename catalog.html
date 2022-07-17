@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Седона</title>
   <link href="styles/styles.css" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon.png">
+  <link rel="icon" type="image/ico" sizes="32x32" href="./favicon.ico">
 </head>
 
 <body class="container">
@@ -14,11 +14,11 @@
   <nav class="navigation">
     <div class="navigation-left">
       <a class="navigation-item-logo">
-        <img src="./assets/logo.svg" width="139" height="70" alt="логотип Седона">
+        <img src="./assets/logo.svg" width="139" height="70" alt="логотип Седона.">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="http://localhost:63342/Sedona/index.html?_ijt=te0jhcjd99lloaucake6te15dn&_ij_reload=RELOAD_ON_SAVE#"
+          <a href="http://localhost:63342/Sedona/index.html?_ijt=te0jhcjd99lloaucake6te15dn&_ij_reload=RELOAD_ON_SAVE"
              class="navigation-link ">Главная</a>
         </li>
         <li class="navigation-item">
@@ -32,13 +32,13 @@
     <ul class="navigation-user">
       <li class="navigation-user-item">
         <a href="#" class="navigation-link">
-          <img src="./assets/search.svg" alt="Поиск" height="19" width="19">
+          <img src="./assets/search.svg" alt="Поиск." height="19" width="19">
           <span class="visually-hidden">Поиск</span>
         </a>
       </li>
       <li class="navigation-user-item">
         <a href="#" class="navigation-link">
-          <img src="./assets/favorite.svg" alt="Избранное" height="17" width="19">
+          <img src="./assets/favorite.svg" alt="Избранное." height="17" width="19">
           <span class="visually-hidden">Избранное</span>
           <span class="favorites">12</span>
         </a>
@@ -56,13 +56,13 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-item">
-            <img src="./assets/catalog/union.svg" alt="Домой" height="13" width="13">
+            <img src="./assets/catalog/union.svg" alt="Домой." height="13" width="13">
             <span class="visually-hidden">Домой</span>
           </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-arrow">
-            <img src="./assets/catalog/arrow.svg" alt="Стрелка" height="8" width="5">
+            <img src="./assets/catalog/arrow.svg" alt="Стрелка." height="8" width="5">
           </a>
           <a>Гостиницы</a>
         </li>
@@ -73,12 +73,12 @@
         <div class="catalog-fieldset">
           <fieldset class="filter-column">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <input checked class="custom-checkbox" name="Infrastructure" type="checkbox" value="pool" id="checkbox-1">
+            <input checked class="custom-checkbox" name="infrastructure" type="checkbox" value="pool" id="checkbox-1">
             <label class="checkbox" for="checkbox-1">Бассейн</label>
-            <input checked class="custom-checkbox" name="Infrastructure" type="checkbox" value="parking"
+            <input checked class="custom-checkbox" name="infrastructure" type="checkbox" value="parking"
                    id="checkbox-2">
             <label class="checkbox" for="checkbox-2">Парковка</label>
-            <input class="custom-checkbox" name="Infrastructure" type="checkbox" value="internet" id="checkbox-3">
+            <input class="custom-checkbox" name="infrastructure" type="checkbox" value="internet" id="checkbox-3">
             <label class="checkbox" for="checkbox-3">Wi-Fi</label>
           </fieldset>
           <fieldset class="filter-column">
@@ -97,10 +97,10 @@
             <div class="range-wrapper-inputs">
               <div class="cost-min-max">
                 <label class="catalog-filter-label catalog-filter-label-from">
-                  <input class="range-input cost-min-max" type="number" name="min-price" value="0" placeholder="от">
+                  <input class="range-input cost-min-max" type="number" name="min-price" value="0" placeholder="от" required>
                 </label>
                 <label class="catalog-filter-label catalog-filter-label-to">
-                  <input class="range-input cost-min-max" type="number" value="9000" name="max-price" placeholder="до">
+                  <input class="range-input cost-min-max" type="number" value="9000" name="max-price" placeholder="до" required>
                 </label>
               </div>
               <label class="catalog-filter-buttons">
@@ -147,13 +147,13 @@
 
         <div class="filter-buttons-wrapper">
           <div class="filter-button">
-            <a href="#" class="view-table"></a>
+            <a href="#" class="view-table" title="таблица"></a>
           </div>
           <div class="filter-button">
-            <a href="#" class="view-card"></a>
+            <a href="#" class="view-card" title="карточки"></a>
           </div>
           <div class="filter-button">
-            <a href="#" class="view-list"></a>
+            <a href="#" class="view-list" title="список"></a>
           </div>
         </div>
         </div>
@@ -164,8 +164,11 @@
     <h2 class="visually-hidden">Товарные карточки</h2>
     <ul class="cards">
       <li class="card">
-        <img alt="Amara Resort Spa" height="211" src="./assets/catalog/amara-resort-spa.jpg" width="300">
+        <a href="#">  <img alt="Amara Resort Spa." height="211" src="./assets/catalog/amara-resort-spa.jpg" width="300">
+        </a>
+        <a class="title-card" href="#">
         <h3 class="advantages-card-title">Amara Resort &amp;&nbsp;Spa</h3>
+        </a>
         <div class="card-hotel-cost">
           <p class="card-description">Гостиница</p>
           <p class="card-description">От&nbsp;4000&nbsp;₽</p>
@@ -184,8 +187,11 @@
         </div>
       </li>
       <li class="card">
-        <img alt="Villias at poco Diablo" height="211" src="./assets/catalog/villas-at-poco-diablo.jpg" width="300">
+        <a href="#"><img alt="Villias at poco Diablo." height="211" src="./assets/catalog/villas-at-poco-diablo.jpg" width="300">
+        </a>
+        <a class="title-card" href="#">
         <h3 class="advantages-card-title">Villas at&nbsp;Poco Diablo</h3>
+        </a>
         <div class="card-hotel-cost">
           <p class="card-description">Гостиница</p>
           <p class="card-description">От&nbsp;5000&nbsp;₽</p>
@@ -200,8 +206,11 @@
         </div>
       </li>
       <li class="card">
-        <img alt="Desert Quail Inn" height="211" src="./assets/catalog/desert-quail-inn.jpg" width="300">
+        <a href="#"><img alt="Desert Quail Inn." height="211" src="./assets/catalog/desert-quail-inn.jpg" width="300">
+        </a>
+        <a class="title-card" href="#">
         <h3 class="advantages-card-title">Desert Quail Inn</h3>
+        </a>
         <div class="card-hotel-cost">
           <p class="card-description">Гостиница</p>
           <p class="card-description">От&nbsp;2500&nbsp;₽</p>
@@ -220,8 +229,11 @@
         </div>
       </li>
       <li class="card">
-        <img alt="GreenTree Inn" height="211" src="./assets/catalog/green-tree-inn.jpg" width="300">
+        <a href="#"><img alt="GreenTree Inn." height="211" src="./assets/catalog/green-tree-inn.jpg" width="300">
+        </a>
+        <a class="title-card" href="#">
         <h3 class="advantages-card-title">GreenTree Inn</h3>
+        </a>
         <div class="card-hotel-cost">
           <p class="card-description">Гостиница</p>
           <p class="card-description">От&nbsp;1500&nbsp;₽</p>
@@ -261,12 +273,12 @@
 
   <section class="subscribe">
     <div class="subscription">
-      <h3 class="subscribe-card-title color-black">Подпишитесь на&nbsp;рассылку</h3>
+      <h2 class="subscribe-card-title color-black">Подпишитесь на&nbsp;рассылку</h2>
       <p class="subscribe-subtitle-catalog">Только полезная информация и&nbsp;никакого спама,<br> честное бойскаутское!
       </p>
       <form action="https://echo.htmlacademy.ru" class="subscribe-email">
         <label class="visually-hidden" for="email">Ваш e-mail</label>
-        <input class="email" id="email" type="text" placeholder="Ваш e-mail">
+        <input class="email" id="email" type="text" placeholder="Ваш e-mail" required>
         <button class="email-button" type="submit">Подписаться</button>
       </form>
     </div>
@@ -278,19 +290,19 @@
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a href="https://vk.com/htmlacademy">
-          <img src="./assets/vk.svg" width="20" height="20" alt="ВКонтакте">
+          <img src="./assets/vk.svg" width="20" height="20" alt="ВКонтакте.">
           <span class="visually-hidden">VK</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a href="https://t.me/htmlacademy">
-          <img src="./assets/telegram.svg" width="20" height="20" alt="Telegram">
+          <img src="./assets/telegram.svg" width="20" height="20" alt="Telegram.">
           <span class="visually-hidden">Telegram</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a href="https://www.youtube.com/user/htmlacademyru">
-          <img src="./assets/youtube.svg" width="20" height="20" alt="YouTube">
+          <img src="./assets/youtube.svg" width="20" height="20" alt="YouTube.">
           <span class="visually-hidden">YouTube</span>
         </a>
       </li>
@@ -301,7 +313,7 @@
       </a>
     </address>
     <a href="https://htmlacademy.ru/">
-      <img class="footer-logo" src="./assets/logo_htmlacademy.svg" alt="logo htmlacademy" width="115" height="34">
+      <img class="footer-logo" src="./assets/logo_htmlacademy.svg" alt="logo htmlacademy." width="115" height="34">
     </a>
   </div>
 </footer>
