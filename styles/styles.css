@@ -377,50 +377,6 @@ body {
   border-radius: 4px;
 }
 
-.cart-item {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 575px;
-}
-
-.cart-item>div:last-child {
-  display: flex;
-  margin: 10px;
-}
-
-.cart-item>div:last-child>div:first-child {
-  width: 127px;
-}
-
-.cart-items-list {
-  padding: 0;
-}
-
-.cart-item-title {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  min-width: 130px;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
-
-.date-arrive {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-
-.cart-item-title-child {
-  padding-left: 20px;
-}
 
 .tooltip {
   display: flex;
